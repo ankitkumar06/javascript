@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>value calculate</title>
+</head>
+<body>
+<form name="example">
+	<table border="1">
+		<tr>
+<td>Enter value:<input type="text" name="calculator"></td>
+<td><input type="button" name="b1" value="calculate" onclick="cal()"></td>
+</tr>
+<tr>
+<td>Answer : <input type="text" name="answer" ></td>
+<td><input type="reset" name="b2" value="reset" ></td>
+</tr>
+</table>
+</form>
+
+<script type="text/javascript">
+	function cal(){
+	document.example.answer.value = eval(document.example.calculator.value);
+}
+</script>
+</body>
+</html>
